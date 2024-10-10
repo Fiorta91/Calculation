@@ -5,13 +5,13 @@ import ru.yagunova.calcapp.util.Calculator;
 
 public class _Main {
     public static void main(String[] args) {
-        double a = 1.456d;
-        double b = 3423.34d;
-        double c = Calculator.summarize(a, b);
-        ResultWriterService.print(a, b, c, "сложение");
-        double d = Calculator.substract(b, a);
-        ResultWriterService.print(b, a, d, "Вычитание");
-        double e = Calculator.multiply(a, b);
-        ResultWriterService.print(a, b, e, "умножение");
+        double num1 = 1.456d;
+        double num2 = 3423.34d;
+        double sum = Calculator.summarize(num1, num2);
+        ResultWriterService.print(num1, num2, sum, "сложение");
+        double sub = Calculator.substract(num2, num1);
+        ResultWriterService.print(num2, num1, sub, "Вычитание");
+        double multy = Calculator.multiply(num1, num2);
+        ResultWriterService.print(num1, num2, multy, "умножение");
     }
 }
